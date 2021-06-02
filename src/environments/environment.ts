@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  CUBEJS_API_TOKEN: '',
+  CUBEJS_API_URL : 'http://localhost:4000/cubejs-api/v1'
+
 };
 
 /*

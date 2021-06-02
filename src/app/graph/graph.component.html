@@ -1,0 +1,15 @@
+
+<div >
+<plotly-plot id ="PieChartPlotly" [data]="graph.data" [layout]="graph.layout" (plotlyClick) = "pieChartClicked($event)"></plotly-plot>
+
+<table>
+    <tr>
+        <th>Names</th> <th>Count</th>
+    </tr>
+    <tr *ngFor="let dataItem of PieChartCubeData">
+     <td (click) = "tableClicked(dataItem.x)" >{{dataItem.x}}</td> <td>{{dataItem['CovidCasesByCountry.totalsum']}}</td>
+    </tr>
+</table>
+
+</div>
+
