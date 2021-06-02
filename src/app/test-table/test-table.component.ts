@@ -1,3 +1,15 @@
+/*
+So I added a new string to the displayedColumns file, as this is needed for the headers to map out.
+in the HTML page I added a new container for the icon header, and created a icon class in this. I also added a
+symbol class to the symbol header, as this will need to be accesseed by the css too.
+
+in the CSS file I changed the header width, and accessed the created classes to adjust the width and hide the borders between the
+symbol and icon class
+ng Changes in the html also works, and I left both included - I'm not sure which will work with the @include(Which is think is from Saas
+or a different css program?) so i said I'd leave both in.
+
+*/
+
 import {AfterViewInit, Component, ViewChild, OnInit} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
