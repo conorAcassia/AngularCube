@@ -24,6 +24,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatCardModule} from '@angular/material/card';
+import { RxjsTestingComponent } from './rxjs-testing/rxjs-testing.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const cubejsOptions = {
@@ -42,7 +44,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     HeaderComponent,
     TablesComponent,
     BrowserDetectComponent,
-    TestTableComponent
+    TestTableComponent,
+    RxjsTestingComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     MatButtonModule,
     MatFormFieldModule,
     //MatTableDataSource,
-    PlatformModule
+    PlatformModule,
+    HttpClientModule
  ],
   providers: [],
   bootstrap: [AppComponent]
